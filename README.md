@@ -12,7 +12,7 @@ Created to be installed behind the firewall on private servers, YouTransfer aims
 
 If you wish to install YouTransfer in your own environment without any modifications, the [Docker image](http://hub.docker.com/r/remie/youtransfer/) is the most quick and easy approach. Simply [install docker](https://docs.docker.com/installation/) and run:
 
-`docker pull donkey/youtransfer:stable`
+`docker pull remie/youtransfer:stable`
 
 You can run the application with the following command:
 
