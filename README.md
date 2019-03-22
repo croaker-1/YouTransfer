@@ -28,7 +28,7 @@ docker run -d
 If you deploy the environment to run on Apache Webserer, adequate settings are required. The following example reflect an Apache VirtualHost configuration with container running on the same host.
 
 ````
-<VirtualHost>
+<VirtualHost *:443>
 <Proxy *>
     Order deny,allow
     Allow from localhost
