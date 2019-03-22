@@ -41,14 +41,14 @@ RequestHeader set X-Forwarded-HTTPS "0"
 </VirtualHost>
 ````
 
-Note. For this, the container was started as follows:
+Note. For this, the container was started as follows (remember port 80 mostly already use by Apache, we take port 81):
 
 ````
 docker pull remie/youtransfer:stable
 docker run -d -v /opt/containerd/[upload_dir]:/opt/youtransfer/uploads -v /opt/containerd/[config_dir]:/opt/youtransfer/config -p 81:5000 remie/youtransfer:stable
 ````
 
-You can now connect to YouTransfer by browsing to http://[docker_host_ip]/  
+You can now connect to YouTransfer by browsing to http://[docker_host_ip:port]/  
 For more information on Docker deployment, please read the [Docker installation instructions](https://github.com/youtransfer/YouTransfer/wiki/docker).
 
 ### Additional documentation
