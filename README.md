@@ -30,8 +30,7 @@ If you deploy the environment to run on Apache Webserer, adequate settings are r
 ````
 <VirtualHost *:443>
 <Proxy *>
-    Order deny,allow
-    Allow from localhost
+    Require all granted
 </Proxy>
 ProxyRequests Off
 ProxyPreserveHost On
